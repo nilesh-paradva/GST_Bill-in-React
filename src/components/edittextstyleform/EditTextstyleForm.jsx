@@ -88,7 +88,7 @@ const EditTextStyleForm = () => {
                                         <input type="number" id="discount" name="discount" value={Inputhandel.discount} className="w-full px-4 py-2 border-2 border-gray-200 rounded-lg shadow-sm outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter discount" onChange={handleChange} />
                                     </div>
                                     <div className="mt-6 text-center">
-                                        <Link to={'/viewcart'} onClick={SubmitBill} className="bg-blue-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">Edit Bill</Link>
+                                        <Link to={'/viewcart'} onClick={SubmitBill} className="bg-blue-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 no-underline">Edit Bill</Link>
                                     </div>
                                 </form>
                             </div>
