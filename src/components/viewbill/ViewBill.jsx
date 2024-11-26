@@ -17,7 +17,7 @@ const ViewBill = () => {
 
     return (
         <>
-            <section className="py-36 my-40">
+            <section className="py-60 my-32">
                 <Container>
                     <Row>
                         <div className="col-lg-12 flex flex-col items-center justify-center h-screen">
@@ -68,30 +68,30 @@ const ViewBill = () => {
                                         <table className=" p-3 border-2 border-[#4f4f93] w-full">
                                             <thead>
                                                 <tr className="border-2 text-center bg-[#343489] text-white">
-                                                    <th className="border-2">Description&nbsp;of&nbsp;Goods</th>
-                                                    <th className="border-2">HSN&nbsp;CODE</th>
-                                                    <th className="border-2">Quantity&nbsp;Pcs./Mtr</th>
-                                                    <th className="border-2">Rate</th>
-                                                    <th className="border-2">Total Amount<br />(Before Tax)</th>
-                                                    <th className="border-2">SGST&nbsp;%</th>
-                                                    <th className="border-2">CGST&nbsp;%</th>
-                                                    <th className="border-2">IGST&nbsp;%</th>
-                                                    <th className="border-2">Discount&nbsp;%</th>
-                                                    <th className="border-2">Taxable Amount</th>
+                                                    <th className="border-2 px-3">Description&nbsp;of&nbsp;Goods</th>
+                                                    <th className="border-2 px-3">HSN&nbsp;CODE</th>
+                                                    <th className="border-2 px-3">Quantity&nbsp;Pcs./Mtr</th>
+                                                    <th className="border-2 px-3">Rate</th>
+                                                    <th className="border-2 px-3">Total&nbsp;Amount<br />(Before Tax)</th>
+                                                    <th className="border-2 px-3">SGST&nbsp;%</th>
+                                                    <th className="border-2 px-3">CGST&nbsp;%</th>
+                                                    <th className="border-2 px-3">IGST&nbsp;%</th>
+                                                    <th className="border-2 px-3">Discount&nbsp;%</th>
+                                                    <th className="border-2 px-3">Taxable&nbsp;Amount</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr className="border-2 text-center">
-                                                    <td className="border-2 py-3">{ViewBill.description}</td>
-                                                    <td className="border-2 py-3">{ViewBill.id}</td>
-                                                    <td className="border-2 py-3">{ViewBill.quantity}</td>
-                                                    <td className="border-2 py-3">{ViewBill.rate} ₹</td>
-                                                    <td className="border-2 py-3">{totalAmount} ₹</td>
-                                                    <td className="border-2 py-3">{ViewBill.sgst || 0}</td>
-                                                    <td className="border-2 py-3">{ViewBill.cgst || 0}</td>
-                                                    <td className="border-2 py-3">{ViewBill.igst || 0}</td>
-                                                    <td className="border-2 py-3">{ViewBill.discount || 0}</td>
-                                                    <td className="border-2 py-3">{totalAmount} ₹</td>
+                                                    <td className="border-2 p-3">{ViewBill.description}</td>
+                                                    <td className="border-2 p-3">{ViewBill.id}</td>
+                                                    <td className="border-2 p-3">{ViewBill.quantity}</td>
+                                                    <td className="border-2 p-3">{ViewBill.rate}&nbsp;₹</td>
+                                                    <td className="border-2 p-3">{totalAmount}&nbsp;₹</td>
+                                                    <td className="border-2 p-3">{ViewBill.sgst || 0}</td>
+                                                    <td className="border-2 p-3">{ViewBill.cgst || 0}</td>
+                                                    <td className="border-2 p-3">{ViewBill.igst || 0}</td>
+                                                    <td className="border-2 p-3">{ViewBill.discount || 0}</td>
+                                                    <td className="border-2 p-3">{totalAmount}&nbsp;₹</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -104,24 +104,24 @@ const ViewBill = () => {
                                         <table className=" w-full p-3 border-2 border-[#4f4f93] rounded-full">
                                             <thead>
                                                 <tr className="border-2 text-center bg-[#343489] text-white">
-                                                    <th className="border-2">HSN&nbsp;CODE</th>
-                                                    <th className="border-2">Total Amount</th>
-                                                    <th className="border-2">Total Discount Amount</th>
-                                                    <th className="border-2">Total Taxable Amount</th>
-                                                    <th className="border-2">Total GST</th>
-                                                    <th className="border-2">Total GST Amount</th>
-                                                    <th className="border-2">Total Invoice Amount</th>
+                                                    <th className="border-2 px-3 py-2">HSN&nbsp;CODE</th>
+                                                    <th className="border-2 px-3">Total&nbsp;Amount</th>
+                                                    <th className="border-2 px-3">Total&nbsp;Discount&nbsp;Amount</th>
+                                                    <th className="border-2 px-3">Total&nbsp;Taxable&nbsp;Amount</th>
+                                                    <th className="border-2 px-3">Total&nbsp;GST</th>
+                                                    <th className="border-2 px-3">Total&nbsp;GST&nbsp;Amount</th>
+                                                    <th className="border-2 px-3">Total&nbsp;Invoice&nbsp;Amount</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr className="border-2 text-center">
-                                                    <td className="border-2 py-3">{ViewBill.id}</td>
-                                                    <td className="border-2 py-3">{totalAmount} ₹</td>
-                                                    <td className="border-2 py-3">{discountAmount} ₹</td>
-                                                    <td className="border-2 py-3">{texAmount} ₹</td>
-                                                    <td className="border-2 py-3">{totalGst} %</td>
-                                                    <td className="border-2 py-3">{GstAmount} ₹</td>
-                                                    <td className="border-2 py-3">{Invoice_Amount} ₹</td>
+                                                    <td className="border-2 p-3">{ViewBill.id}</td>
+                                                    <td className="border-2 p-3">{totalAmount}&nbsp;₹</td>
+                                                    <td className="border-2 p-3">{discountAmount}&nbsp;₹</td>
+                                                    <td className="border-2 p-3">{texAmount}&nbsp;₹</td>
+                                                    <td className="border-2 p-3">{totalGst}&nbsp;%</td>
+                                                    <td className="border-2 p-3">{GstAmount}&nbsp;₹</td>
+                                                    <td className="border-2 p-3">{Invoice_Amount}&nbsp;₹</td>
                                                 </tr>
                                             </tbody>
                                         </table>
