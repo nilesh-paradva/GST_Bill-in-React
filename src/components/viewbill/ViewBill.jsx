@@ -1,9 +1,13 @@
+import { useRef } from "react";
 import { Link, useParams } from "react-router-dom"
 import { Container, Row } from "react-bootstrap";
 import { StorageGet } from "../../services/storageGet";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 import "../../App.css"
 
 const ViewBill = () => {
+    const pdfref = useRef();
     const { id } = useParams();
     const GetBill = StorageGet();
     const ViewBill = GetBill.find((cust) => cust.id == id);
@@ -15,9 +19,26 @@ const ViewBill = () => {
     const GstAmount = (((texAmount || 1) * (totalGst || 1)) / 100).toFixed(2);
     const Invoice_Amount = ((texAmount + (Number(GstAmount)))).toFixed(2);
 
+    // const downloadPdf = () => {
+    //     const input = pdfref.current;
+    //     html2canvas(input).then((canvas) => {
+    //         const imgData = canvas.toDataURL('image/png');
+    //         const pdf = new jsPDF('p','mm','a4',true);
+    //         const pdfwidth = pdf.internal.pageSize.getWidth();
+    //         const pdfheight = pdf.internal.pageSize.getHeight();
+    //         const imgwidth = canvas.width;
+    //         const imgheight = canvas.height;
+    //         const ratio = Math.min(pdfwidth/imgwidth, pdfheight/imgheight);
+    //         const imgX = (pdfwidth - imgwidth * ratio) / 2;
+    //         const imgY = 10;
+    //         pdf.addImage(imgData,'PNG',imgX,imgY,imgwidth*ratio,imgheight*ratio);
+    //         pdf.save("yashvi-enterprise.pdf");
+    //     });
+    // };
+
     return (
         <>
-            <section className="py-60 my-20">
+            <section className="py-60 my-20" ref={pdfref} >
                 <Container>
                     <Row>
                         <div className="col-lg-12 flex flex-col items-center justify-center h-screen">
@@ -65,7 +86,7 @@ const ViewBill = () => {
                             <div className="col-12 table-data flex items-center justify-center">
                                 <div className="col-12 flex items-center justify-center">
                                     <div className="bill_view_data mt-4 overflow-x-scroll">
-                                        <table className=" p-3 border-2 border-[#4f4f93] w-full">
+                                        <table className=" p-3 border-2 border-[#4f4f93]">
                                             <thead>
                                                 <tr className="border-2 text-center bg-[#343489] text-white">
                                                     <th className="border-2 px-3">Description&nbsp;of&nbsp;Goods</th>
@@ -131,6 +152,7 @@ const ViewBill = () => {
                             <div className="col-12">
                                 <div className="download-btn text-center mt-4">
                                     <button onClick={() => window.print()} className="px-3 py-2 bg-[#242465] text-white font-bold rounded-lg inline-block">Download</button>
+                                    {/* <button onClick={downloadPdf} className="px-3 py-2 bg-[#242465] text-white font-bold rounded-lg inline-block">Download</button> */}
                                 </div>
                             </div>
                         </div>
