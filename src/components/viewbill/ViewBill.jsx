@@ -55,7 +55,7 @@ const ViewBill = () => {
                                     <div className="logo-discription flex flex-col flex-lg-row border-2 rounded-lg mt-4">
                                         <div className="col-lg-8">
                                             <div className="logo p-4">
-                                                <h3 className="h3 text-[#1b1b5c] font-bold">YASHVI ENTERPRICE</h3>
+                                                <h3 className="h3 text-[#1b1b5c] font-bold">YASHVI ENTERPRISE</h3>
                                                 <p className="text-[20px] text-[#2a2a7c] font-bold">G - 1 403, GOKULDHAM TOWNSHIP DINDOLI, SURAT</p>
                                                 <span className="text-[20px] text-[#2a2a7c] font-bold block">GSTIN :- ------</span>
                                                 <span className="text-[20px] text-[#2a2a7c] font-bold">Hitesh bhai :- 99096 55662</span>

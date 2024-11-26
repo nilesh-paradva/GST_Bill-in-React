@@ -74,15 +74,15 @@ const TextStyleForm = () => {
                   </div>
                   <div className="mb-4">
                     <label htmlFor="cgst" className="block text-gray-700 font-bold mb-2">CGST</label>
-                    <input type="number" id="cgst" name="cgst" value={Inputhandel.cgst} className="w-full px-4 py-2 border-2 border-gray-200 rounded-lg shadow-sm outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter discount" onChange={handleChange} />
+                    <input type="number" id="cgst" name="cgst" value={Inputhandel.cgst} className="w-full px-4 py-2 border-2 border-gray-200 rounded-lg shadow-sm outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter CGST" onChange={handleChange} />
                   </div>
                   <div className="mb-4">
                     <label htmlFor="sgst" className="block text-gray-700 font-bold mb-2">SGST</label>
-                    <input type="number" id="sgst" name="sgst" value={Inputhandel.sgst} className="w-full px-4 py-2 border-2 border-gray-200 rounded-lg shadow-sm outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter discount" onChange={handleChange} />
+                    <input type="number" id="sgst" name="sgst" value={Inputhandel.sgst} className="w-full px-4 py-2 border-2 border-gray-200 rounded-lg shadow-sm outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter SGST" onChange={handleChange} />
                   </div>
                   <div className="mb-4">
                     <label htmlFor="igst" className="block text-gray-700 font-bold mb-2">IGST</label>
-                    <input type="number" id="igst" name="igst" value={Inputhandel.igst} className="w-full px-4 py-2 border-2 border-gray-200 rounded-lg shadow-sm outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter discount" onChange={handleChange} />
+                    <input type="number" id="igst" name="igst" value={Inputhandel.igst} className="w-full px-4 py-2 border-2 border-gray-200 rounded-lg shadow-sm outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Enter IGST" onChange={handleChange} />
                   </div>
                   <div className="mb-4">
                     <label htmlFor="discount" className="block text-gray-700 font-bold mb-2">Discount %</label>
