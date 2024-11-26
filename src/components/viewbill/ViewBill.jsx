@@ -19,6 +19,9 @@ const ViewBill = () => {
     const GstAmount = (((texAmount || 1) * (totalGst || 1)) / 100).toFixed(2);
     const Invoice_Amount = ((texAmount + (Number(GstAmount)))).toFixed(2);
 
+    const today = new Date();
+    const formattedDate = `${String(today.getDate()).padStart(2, '0')}-${String(today.getMonth() + 1).padStart(2, '0')}-${today.getFullYear()}`;
+
     // const downloadPdf = () => {
     //     const input = pdfref.current;
     //     html2canvas(input).then((canvas) => {
@@ -61,7 +64,7 @@ const ViewBill = () => {
                                         <div className="col-lg-4">
                                             <div className="discription p-4 text-start flex flex-col">
                                                 <h2 className="h4 font-bold rounded-lg text-[#1b1b5c] py-3 px-3 border-2 inline-block">GST INVOICE</h2>
-                                                <h2 className="h4 font-bold rounded-lg text-[#1b1b5c] py-3 px-3 border-2 inline-block">Date :- 25-5-2024</h2>
+                                                <h2 className="h4 font-bold rounded-lg text-[#1b1b5c] py-3 px-3 border-2 inline-block">Date :- {formattedDate}</h2>
                                             </div>
                                         </div>
                                     </div>
