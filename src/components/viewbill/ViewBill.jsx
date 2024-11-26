@@ -17,7 +17,7 @@ const ViewBill = () => {
 
     return (
         <>
-            <section className="py-20">
+            <section className="py-36 my-40">
                 <Container>
                     <Row>
                         <div className="col-lg-12 flex flex-col items-center justify-center h-screen">
@@ -63,9 +63,9 @@ const ViewBill = () => {
                                 </div>
                             </div>
                             <div className="col-12 table-data flex items-center justify-center">
-                                <div className="col-11 flex items-center justify-center">
+                                <div className="col-12 flex items-center justify-center">
                                     <div className="bill_view_data mt-4 overflow-x-scroll">
-                                        <table className=" p-3 border-2 border-[#4f4f93] w-[1020px]">
+                                        <table className=" p-3 border-2 border-[#4f4f93] w-full">
                                             <thead>
                                                 <tr className="border-2 text-center bg-[#343489] text-white">
                                                     <th className="border-2">Description&nbsp;of&nbsp;Goods</th>
@@ -99,9 +99,9 @@ const ViewBill = () => {
                                 </div>
                             </div>
                             <div className="col-12 flex items-center justify-center">
-                                <div className="col-11 flex items-center justify-center">
+                                <div className="col-12 flex items-center justify-center">
                                     <div className="get-amount mt-4 overflow-x-scroll">
-                                        <table className=" w-[1020px] p-3 border-2 border-[#4f4f93] rounded-full">
+                                        <table className=" w-full p-3 border-2 border-[#4f4f93] rounded-full">
                                             <thead>
                                                 <tr className="border-2 text-center bg-[#343489] text-white">
                                                     <th className="border-2">HSN&nbsp;CODE</th>
