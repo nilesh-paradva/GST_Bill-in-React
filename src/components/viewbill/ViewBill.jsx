@@ -17,7 +17,7 @@ const ViewBill = () => {
 
     return (
         <>
-            <section className="py-60 my-32">
+            <section className="py-60 my-24">
                 <Container>
                     <Row>
                         <div className="col-lg-12 flex flex-col items-center justify-center h-screen">
