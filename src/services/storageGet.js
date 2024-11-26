@@ -1,0 +1,1 @@
+export const StorageGet = () => (JSON.parse(localStorage.getItem("TextStyleBill"))) || [];
