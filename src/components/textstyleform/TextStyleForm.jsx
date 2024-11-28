@@ -42,7 +42,7 @@ const TextStyleForm = () => {
 
   return (
     <>
-      <section className="py-24 my-8">
+      <section className="py-32 my-5">
         <Container>
           <Row>
             <div className="col-12 flex items-center justify-center h-screen">
