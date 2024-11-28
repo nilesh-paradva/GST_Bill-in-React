@@ -48,9 +48,9 @@ const ViewBill = () => {
                             <div className="col-lg-12">
                                 <div className="gst_bill">
                                     <p className="flex items-center flex-col gap-2 flex-lg-row justify-between p-3 rounded-lg text-white font-bold bg-[#1b1b5c]"><span>જય ભાણાઆતા</span><span>|| श्री गणेशाय नमः ||</span> <span>જય આશાપુરા માઁ</span></p>
-                                    <div className="home-add-btn flex items-center justify-center">
-                                        <Link to="/" className="px-3 py-2 bg-blue-800 text-white rounded-lg inline-block me-2"><i className="fa-solid fa-house"></i></Link>
-                                        <Link to="/form" className="px-2 py-1 bg-blue-800 text-white rounded-lg text-2xl me-2"><i className="fa-solid fa-user-plus"></i></Link>
+                                    <div className="home-add-btn flex items-center justify-center flex-col flex-lg-row gap-2">
+                                        <Link to="/" className="px-3 py-2 bg-blue-800 text-white rounded-lg inline-block no-underline">Home</Link>
+                                        <Link to="/form" className="px-3 py-2 bg-blue-800 text-white rounded-lg no-underline">Add Bill</Link>
                                     </div>
                                     <div className="logo-discription flex flex-col flex-lg-row border-2 rounded-lg mt-4">
                                         <div className="col-lg-8">

@@ -46,9 +46,9 @@ const EditTextStyleForm = () => {
                                 <div className="bill-hading my-3">
                                     <h2 className="bg-[#1b1b5c] text-white rounded-lg text-center py-2 h2">Edit Bill</h2>
                                 </div>
-                                <div className="link-btn mb-4 text-center">
-                                    <Link to="/" className="px-3 py-2 bg-blue-800 text-white font-bold rounded-lg inline-block me-2"><i className="fa-solid fa-house"></i></Link>
-                                    <Link to={'/viewcart'} className="px-3 py-2 inline-block rounded-lg bg-blue-800 text-white font-bold me-2"><i className="fa-solid fa-users"></i></Link>
+                                <div className="link-btn mb-4 flex items-center justify-center flex-col flex-lg-row gap-2">
+                                    <Link to="/" className="px-3 py-2 bg-blue-800 text-white font-bold rounded-lg inline-block no-underline">Home</Link>
+                                    <Link to={'/viewcart'} className="px-3 py-2 inline-block rounded-lg bg-blue-800 text-white font-bold no-underline">View Bill</Link>
                                 </div>
                                 <form action="">
                                     <div className="mb-4">

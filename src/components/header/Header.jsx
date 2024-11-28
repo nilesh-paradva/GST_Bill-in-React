@@ -15,9 +15,9 @@ const Header = () => {
                         </div>
                         <div className="col-lg-8">
                             <div className="menu">
-                                <ul className="flex items-center justify-center list-unstyled">
-                                    <li className="me-3"><Link to={'/viewcart'} className="px-3 py-2 inline-block rounded-lg bg-blue-700 text-white font-bold"><i className="fa-solid fa-users"></i></Link></li>
-                                    <li><Link to={'/form'} className="px-3 py-2 inline-block rounded-lg bg-blue-700 text-white font-bold"><i className="fa-solid fa-user-plus"></i></Link></li>
+                                <ul className="flex items-center justify-center list-unstyled flex-col flex-lg-row gap-4">
+                                    <li className=""><Link to={'/viewcart'} className="px-3 py-2 inline-block rounded-lg bg-blue-700 text-white font-bold no-underline">View Bill</Link></li>
+                                    <li><Link to={'/form'} className="px-3 py-2 inline-block rounded-lg bg-blue-700 text-white font-bold no-underline">Add Bill</Link></li>
                                 </ul>
                             </div>
                         </div>

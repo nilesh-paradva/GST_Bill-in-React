@@ -47,9 +47,9 @@ const TextStyleForm = () => {
           <Row>
             <div className="col-12 flex items-center justify-center h-screen">
               <div className="col-8">
-                <div className="link-btn mb-4 text-center">
-                  <Link to="/" className="px-3 py-2 bg-blue-800 text-white font-bold rounded-lg inline-block me-2"><i className="fa-solid fa-house"></i></Link>
-                  <Link to={'/viewcart'} className="px-3 py-2 inline-block rounded-lg bg-blue-700 text-white font-bold me-2"><i className="fa-solid fa-users"></i></Link>
+                <div className="link-btn mb-4 text-center flex items-center justify-center flex-col gap-2 flex-lg-row">
+                  <Link to="/" className="px-3 py-2 bg-blue-800 text-white font-bold rounded-lg inline-block no-underline">Home</Link>
+                  <Link to={'/viewcart'} className="px-3 py-2 inline-block rounded-lg bg-blue-700 text-white font-bold no-underline">View Bill</Link>
                 </div>
                 <form action="">
                   <div className="mb-4">

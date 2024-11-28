@@ -31,9 +31,9 @@ const ViewCart = () => {
                             <div className="bg-white p-6 rounded-lg shadow-lg">
                                 <div className="text-center mb-4">
                                     <h2 className="text-2xl font-bold text-center mb-3 py-2 rounded-lg text-white bg-[#1b1b5c]">Bill List</h2>
-                                    <div className="home-add-btn flex items-center justify-center">
-                                        <Link to="/" className="px-3 py-2 bg-blue-800 text-white rounded-lg inline-block me-2"><i className="fa-solid fa-house"></i></Link>
-                                        <Link to="/form" className="px-2 py-1 bg-blue-800 text-white rounded-lg text-2xl me-2"><i className="fa-solid fa-user-plus"></i></Link>
+                                    <div className="home-add-btn flex items-center justify-center flex-col flex-lg-row gap-2">
+                                        <Link to="/" className="px-3 py-2 bg-blue-800 text-white rounded-lg inline-block no-underline">Home</Link>
+                                        <Link to="/form" className="px-3 py-2 bg-blue-800 text-white rounded-lg inline-block no-underline">Add Bill</Link>
                                     </div>
                                 </div>
                                 {/* <input type="text" placeholder="Search..." className="mt-3 px-3 py-2 border rounded-lg mb-3 outline-none" value={Search} onChange={handleSearch} /> */}
@@ -70,10 +70,10 @@ const ViewCart = () => {
                                                         <td className="border px-4 py-3">{cust.sgst || 0}</td>
                                                         <td className="border px-4 py-3">{cust.igst || 0}</td>
                                                         <td className="border px-4 py-3">{cust.discount || 0}</td>
-                                                        <td className="border px-4 py-3">
-                                                            <button className="bg-green-700 p-2 px-3 rounded-lg me-2 text-white" onClick={() => billView(cust.id)}><i className="fa-solid fa-eye"></i></button>
-                                                            <button className="bg-blue-700 p-2 px-3 rounded-lg me-2 text-white" onClick={() => billEdit(cust.id)}><i className="fa-solid fa-pen-to-square"></i></button>
-                                                            <a href="#" className="bg-red-700 p-2 px-3 rounded-lg text-white" onClick={() => BillData(cust.id)}><i className="fa-solid fa-trash"></i></a>
+                                                        <td className="border px-4 py-3 w-[800px]">
+                                                            <button className="bg-green-700 p-2 px-3 rounded-lg me-2 text-white" onClick={() => billView(cust.id)}>View&nbsp;Bill</button>
+                                                            <button className="bg-blue-700 p-2 px-3 rounded-lg me-2 text-white" onClick={() => billEdit(cust.id)}>Edit&nbsp;Bill</button>
+                                                            <a href="#" className="bg-red-700 p-2 px-3 rounded-lg text-white no-underline" onClick={() => BillData(cust.id)}>Delete</a>
                                                         </td>
                                                     </tr>
                                                 ))}
